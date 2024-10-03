@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "aeronet-to-parquet"
+version = "0.1.0"
+description = "Converts AERONET CSV files to Parquet format. Intended to be used with the 'download all data' option to save disk space."
+authors = ["Thanasis Georgiou <ageorgiou@noa.gr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.3"
+pyarrow = "^17.0.0"
+click = "^8.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
